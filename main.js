@@ -88,6 +88,10 @@ gameBoard.addEventListener('mousemove', () => {
     alert(`Player ${document.getElementById('cell-4').innerText} Wins`)
     location.reload();
   }
+  if (document.getElementById('board').innerText === `${document.getElementById('cell-0').innerText}\n${document.getElementById('cell-1').innerText}\n${document.getElementById('cell-2').innerText}\n${document.getElementById('cell-3').innerText}\n${document.getElementById('cell-4').innerText}\n${document.getElementById('cell-5').innerText}\n${document.getElementById('cell-6').innerText}\n${document.getElementById('cell-7').innerText}\n${document.getElementById('cell-8').innerText}`) {
+    alert('THE GAME IS TIED, TRY AGAIN');
+    location.reload();
+  }
 });
 
 
